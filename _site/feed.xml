@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LingjieLi</title>
+    <description></description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 15 Nov 2018 16:24:13 +0800</pubDate>
+    <lastBuildDate>Thu, 15 Nov 2018 16:24:13 +0800</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Jekyll 搭建静态博客</title>
+        <description>
+一直以来都想搭建一个自己的博客，但是近半年做项目太忙，再加上教研室的网络很坑爹，所以也一直没顾得上。之前用过 WordPress 托管在免费的京东云擎上，但是速度太慢。在知乎上看到一些相关的内容，于是选择了在github上用jekyll搭建博客。
+
+</description>
+        <pubDate>Mon, 16 Feb 2015 06:14:54 +0800</pubDate>
+        <link>http://localhost:4000/2015/02/16/create-my-blog-with-jekyll/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/02/16/create-my-blog-with-jekyll/</guid>
+        
+        <category>jekyll</category>
+        
+        <category>RubyGems</category>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
+    
+      <item>
+        <title>hello jekyll!</title>
+        <description>当年创建 jekyll 时默认的一篇文章，没什么意义，我也一直没删除，留个纪念吧。</description>
+        <pubDate>Tue, 10 Feb 2015 23:14:54 +0800</pubDate>
+        <link>http://localhost:4000/2015/02/10/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/02/10/welcome-to-jekyll/</guid>
+        
+        <category>jekyll</category>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
+    
+  </channel>
+</rss>
