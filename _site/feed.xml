@@ -5,40 +5,444 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Nov 2018 16:24:13 +0800</pubDate>
-    <lastBuildDate>Thu, 15 Nov 2018 16:24:13 +0800</lastBuildDate>
+    <pubDate>Thu, 15 Nov 2018 19:25:22 +0800</pubDate>
+    <lastBuildDate>Thu, 15 Nov 2018 19:25:22 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>Jekyll 搭建静态博客</title>
+        <title>3.3二叉树遍历</title>
         <description>
-一直以来都想搭建一个自己的博客，但是近半年做项目太忙，再加上教研室的网络很坑爹，所以也一直没顾得上。之前用过 WordPress 托管在免费的京东云擎上，但是速度太慢。在知乎上看到一些相关的内容，于是选择了在github上用jekyll搭建博客。
+本文主要记录在MOOC上学习到的二叉树遍历相关主题
 
 </description>
-        <pubDate>Mon, 16 Feb 2015 06:14:54 +0800</pubDate>
-        <link>http://localhost:4000/2015/02/16/create-my-blog-with-jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/02/16/create-my-blog-with-jekyll/</guid>
+        <pubDate>Thu, 15 Nov 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/11/15/DataStructure-ChenHe3.3/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/11/15/DataStructure-ChenHe3.3/</guid>
         
-        <category>jekyll</category>
+        <category>二叉树</category>
         
-        <category>RubyGems</category>
+        <category>BinaryTree</category>
         
         
-        <category>jekyll</category>
+        <category>LearnDataStructure</category>
         
       </item>
     
       <item>
-        <title>hello jekyll!</title>
-        <description>当年创建 jekyll 时默认的一篇文章，没什么意义，我也一直没删除，留个纪念吧。</description>
-        <pubDate>Tue, 10 Feb 2015 23:14:54 +0800</pubDate>
-        <link>http://localhost:4000/2015/02/10/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/02/10/welcome-to-jekyll/</guid>
+        <title>Datastructure Chenhe3.2</title>
+        <description>&lt;h2 id=&quot;数据结构陈越何钦铭3-树上&quot;&gt;数据结构(陈越何钦铭)3-树(上)&lt;/h2&gt;
+&lt;h3 id=&quot;数据结构陈越何钦铭32-二叉树及存储结构&quot;&gt;数据结构(陈越何钦铭)3.2-二叉树及存储结构&lt;/h3&gt;
+
+[TOC]
+
+####1.1二叉树的定义
+&lt;strong&gt;二叉树$T$:一个有穷的结点集合&lt;/strong&gt;
+这个集合可以为空，如果不为空，则它由根节点和称为其左子树$T_L$和右子树$T_R$的两个不相交的二叉树组成
+
+&lt;h5 id=&quot;111二叉树具有五种基本形态&quot;&gt;1.1.1二叉树具有五种基本形态&lt;/h5&gt;
+空树、仅根节点、只有左子树、只有右子树、有左子树和右子树
+&lt;h5 id=&quot;112二叉树的子树有左子树和右子树之分&quot;&gt;1.1.2二叉树的子树有左子树和右子树之分&lt;/h5&gt;
+&lt;h5 id=&quot;113特殊二叉树&quot;&gt;1.1.3特殊二叉树&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;斜二叉树
+ &lt;img src=&quot;./img/SkewedBinaryTree.png&quot; alt=&quot;斜二叉树&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;完美二叉树(满二叉树)
+ &lt;img src=&quot;./img/Full_PerfectBinaryTree.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;完全二叉树
+ 缺少的结点只在最底层的右边
+ &lt;img src=&quot;./img/CompleteBinaryTree.png&quot; alt=&quot;&quot; /&gt;
+ ##### 1.1.4 二叉树性质&lt;/li&gt;
+&lt;/ul&gt;
+
+$n_0$:度为0的结点，叶子结点
+$n_1$:度为1的结点
+$n_2$:度为2的结点
+$n_0=n_2+1$
+</description>
+        <pubDate>Sat, 29 Sep 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/09/29/DataStructure-ChenHe3.2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/09/29/DataStructure-ChenHe3.2/</guid>
         
-        <category>jekyll</category>
+        
+      </item>
+    
+      <item>
+        <title>Datastructure Chenhe3.1</title>
+        <description>&lt;h2 id=&quot;数据结构陈越何钦铭3-树上&quot;&gt;数据结构(陈越何钦铭)3-树(上)&lt;/h2&gt;
+&lt;h3 id=&quot;数据结构陈越何钦铭31-树与树的表示&quot;&gt;数据结构(陈越何钦铭)3.1-树与树的表示&lt;/h3&gt;
+
+[TOC]
+&lt;h4 id=&quot;11树的表示&quot;&gt;1.1树的表示&lt;/h4&gt;
+儿子兄弟表示法：每个结点有三个部分组成，结点本身的数据，儿子结点，兄弟结点
+
+&lt;ul&gt;
+  &lt;li&gt;树的结点
+&lt;img src=&quot;./img/TreeNode.png&quot; alt=&quot;树的结点&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;使用儿子-兄弟表示法表示的一棵树
+&lt;img src=&quot;./img/Tree.png&quot; alt=&quot;使用儿子-兄弟表示法表示一棵树&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;使用儿子-兄弟表示法，树变成了二叉树
+&lt;img src=&quot;./img/Tree2BinaryTree.png&quot; alt=&quot;树与二叉树&quot; /&gt;
+&lt;strong&gt;位于同一行的，在使用儿子-兄弟表示法之前处于树的同一层&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 29 Sep 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/09/29/DataStructure-ChenHe3.1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/09/29/DataStructure-ChenHe3.1/</guid>
         
         
-        <category>jekyll</category>
+      </item>
+    
+      <item>
+        <title>Datastructure Chenhe2.3</title>
+        <description>&lt;h2 id=&quot;数据结构陈越何钦铭2-线性结构&quot;&gt;数据结构(陈越何钦铭)2-线性结构&lt;/h2&gt;
+&lt;h3 id=&quot;数据结构陈越何钦铭23-队列queue&quot;&gt;数据结构(陈越何钦铭)2.3-队列(Queue)&lt;/h3&gt;
+
+&lt;strong&gt;堆栈是一种受限制的线性结构&lt;/strong&gt;,是一种特殊的线性表
+入队只能在队尾进行,出队只能在队头进行
+
+&lt;h4 id=&quot;队列的抽象数据结构&quot;&gt;队列的抽象数据结构&lt;/h4&gt;
+
+&lt;h4 id=&quot;队列的存储方式&quot;&gt;队列的存储方式&lt;/h4&gt;
+&lt;h5 id=&quot;顺序存储方式&quot;&gt;顺序存储方式&lt;/h5&gt;
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#define MaxSize &amp;lt;存储数据元素的最大个数&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;QNode&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;ElementType&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MaxSize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//队尾&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;front&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//队头&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;QNode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h5 id=&quot;链表存储结构&quot;&gt;链表存储结构&lt;/h5&gt;
+&lt;strong&gt;使用链表存储队列&lt;/strong&gt;,队头指向链表的头,队尾指向链表的尾
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Node&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;ElementTyep&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;QNode&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Node&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;front&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;QNode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Queue&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PtrQ&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;循环队列&quot;&gt;循环队列&lt;/h4&gt;
+&lt;strong&gt;队列空和满的判别条件是什么?&lt;/strong&gt;
+	- 使用额外标记:size或tag
+    - 仅仅使用n-1个空间
+</description>
+        <pubDate>Sat, 29 Sep 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/09/29/DataStructure-ChenHe2.3/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/09/29/DataStructure-ChenHe2.3/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Datastructure Chenhe2.2</title>
+        <description>&lt;h2 id=&quot;数据结构陈越何钦铭2-线性结构&quot;&gt;数据结构(陈越何钦铭)2-线性结构&lt;/h2&gt;
+&lt;h3 id=&quot;数据结构陈越何钦铭22-堆栈stack&quot;&gt;数据结构(陈越何钦铭)2.2-堆栈(Stack)&lt;/h3&gt;
+
+&lt;strong&gt;堆栈是一种线性结构,是一种特殊的线性表&lt;/strong&gt;,入栈和出战只能在栈顶操作,在递归,函数调用,表达式求值,深度优先搜索,回溯算法中有广泛的应用
+
+&lt;h4 id=&quot;1引例表达式求值&quot;&gt;1.引例:表达式求值&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;中缀表达式:运算符位于两个运算数之间&lt;/li&gt;
+  &lt;li&gt;后缀表达式:运算符位于两个运算数之后&lt;/li&gt;
+  &lt;li&gt;前缀表达式:运算符位于两个运算树之前&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;11表达式求值应用堆栈实现后缀表达式求值的基本过程&quot;&gt;1.1表达式求值:应用堆栈实现后缀表达式求值的基本过程&lt;/h5&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1.运算数:入栈
+2.运算符:从堆栈中弹出只当数量的运算数,计算结果并入栈
+3.栈顶上的元素就是表达式的结果 ##### 1.2中缀表达式求值:将中缀表达式转换为后缀表达式,然后求值 **中缀表达式如何转换为后缀表达式?**
+从头至尾读取中缀表达式的每个对象,对不同对象按不同的情况处理
+-1.运算数:直接输出
+- 2.左括号:压入堆栈
+- 3.右括号:将栈顶的运算符弹出并输出,知道遇到左括号(弹出,不输出)
+- 4.运算符:
+	- 若优先级大于栈顶运算符:入栈
+	- 若运算符小于等于栈顶运算符,栈顶运算符弹出并输出;在比较新的栈顶运算符,直到该运算符大于栈顶运算符优先级,然后将该运算符入栈(在堆栈中的左括号优先级最小)
+- 5.若各对象处理完毕,则把堆栈中存留的运算符一并输出
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;2堆栈的操作堆栈的抽象数据结构&quot;&gt;2堆栈的操作:堆栈的抽象数据结构&lt;/h4&gt;
+&lt;img src=&quot;./img/StackADT.png&quot; alt=&quot;&quot; /&gt;
+&lt;h4 id=&quot;3堆栈的存储&quot;&gt;3堆栈的存储&lt;/h4&gt;
+&lt;h5 id=&quot;31顺序存储&quot;&gt;3.1顺序存储&lt;/h5&gt;
+通常由一个一维数组和一个指示栈顶元素位置的变量组成
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#defind MaxSize &amp;lt;存储数据元素的最大个数&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SNode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Stack&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SNode&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;ElementTypr&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MaxSize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h5 id=&quot;32链式存储&quot;&gt;3.2链式存储&lt;/h5&gt;
+实际上是一个单链表,插入和删除操作只在栈顶进行,栈顶指针Top在链表的头部
+&lt;strong&gt;生成一个头结点&lt;/strong&gt;,&lt;code class=&quot;highlighter-rouge&quot;&gt;s-&amp;gt;next=NULL&lt;/code&gt;,头结点的数据部分是空的,这样的好处在于插入节点时,不需要判断当前栈是否为空
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SNode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Stack&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SNode&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;ElementType&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;SNode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;4堆栈应用&quot;&gt;4堆栈应用&lt;/h4&gt;
+&lt;h5 id=&quot;41使用一个数组存储两个堆栈&quot;&gt;4.1使用一个数组存储两个堆栈&lt;/h5&gt;
+&lt;strong&gt;使两个堆栈分别从数组的两头向中间生长,当两个堆栈的栈顶指针相遇时,代表堆栈满&lt;/strong&gt;
+</description>
+        <pubDate>Sat, 29 Sep 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/09/29/DataStructure-ChenHe2.2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/09/29/DataStructure-ChenHe2.2/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Datastructure Chenhe2.1</title>
+        <description>&lt;h2 id=&quot;数据结构陈越何钦铭2-线性结构&quot;&gt;数据结构(陈越何钦铭)2-线性结构&lt;/h2&gt;
+&lt;h3 id=&quot;数据结构陈越何钦铭21-线性表&quot;&gt;数据结构(陈越何钦铭)2.1-线性表&lt;/h3&gt;
+[TOC]
+
+&lt;h3 id=&quot;引入多项式的表示及运算&quot;&gt;引入:多项式的表示及运算&lt;/h3&gt;
+&lt;h4 id=&quot;顺序存储结构直接表示&quot;&gt;顺序存储结构直接表示&lt;/h4&gt;
+&lt;strong&gt;使用数组元素 $a[i]$ 存储 $x^i$ 的系数 $a_i$&lt;/strong&gt;
+&lt;ul&gt;
+  &lt;li&gt;多项式相加:相同下标的项相加&lt;/li&gt;
+  &lt;li&gt;多项式相乘:遍历
+&lt;img src=&quot;./img/LAll.png&quot; alt=&quot;&quot; /&gt;
+####顺序存储结构表示非零项
+&lt;strong&gt;用结构数组表示非零项,数组分量$a[i]$ 是由系数 $a_i$ 和指数 $i$ 组成的结构&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;多项式相加:从头开始,比较两个多项式对应的指数,指数相等:相加,都往后移一个;不等:指数大的放进和里,往后移一个&lt;/li&gt;
+  &lt;li&gt;多项式相乘:遍历&lt;/li&gt;
+  &lt;li&gt;好处:节省空间
+&lt;img src=&quot;./img/LNoZero.png&quot; alt=&quot;&quot; /&gt;
+    &lt;h4 id=&quot;链表结构表示非零项&quot;&gt;链表结构表示非零项&lt;/h4&gt;
+    &lt;strong&gt;一个链表节点有三个域:系数,指数,指向下一个节点的指针&lt;/strong&gt;
+  &lt;/li&gt;
+  &lt;li&gt;多项式相加:同顺序结构存储非零项&lt;/li&gt;
+  &lt;li&gt;多项式相乘:遍历
+&lt;img src=&quot;./img/Llist.png&quot; alt=&quot;&quot; /&gt;
+    &lt;h4 id=&quot;线性表list&quot;&gt;线性表(List)&lt;/h4&gt;
+    &lt;strong&gt;同类型元素组成的有序序列的线性结构&lt;/strong&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;属性:&lt;/strong&gt; 长度,表头,表尾
+&lt;img src=&quot;./img/LADT.png&quot; alt=&quot;&quot; /&gt;
+    &lt;h3 id=&quot;线性结构线性表的存储方式&quot;&gt;线性结构(线性表)的存储方式&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;顺序存储&lt;/li&gt;
+  &lt;li&gt;链式存储&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;广义表generlized-list&quot;&gt;广义表(Generlized List)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;广义表是线性表的推广&lt;/li&gt;
+  &lt;li&gt;对于线性表来说, $n$ 个元素全部都是单元素,对于广义表来说,既可以是单元素也可以是广义表
+&lt;img src=&quot;./img/Glist.png&quot; alt=&quot;&quot; /&gt;
+    &lt;h3 id=&quot;多重链表&quot;&gt;多重链表&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;广义表是一种多重链表&lt;/li&gt;
+  &lt;li&gt;多重链表对于存储图\树 这种结构很友好,例如用十字链表存储稀疏矩阵
+&lt;img src=&quot;./img/Mlist1.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;./img/Mlist2.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;./img/Mlist3.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;./img/Mlist4.png&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 29 Sep 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/09/29/DataStructure-ChenHe2.1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/09/29/DataStructure-ChenHe2.1/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Datastructure Chenhe1</title>
+        <description>&lt;h2 id=&quot;数据结构陈越何钦铭1-什么是数据结构&quot;&gt;数据结构(陈越何钦铭)1-什么是数据结构&lt;/h2&gt;
+[TOC]
+&lt;h4 id=&quot;秦九韶算法&quot;&gt;秦九韶算法&lt;/h4&gt;
+&lt;script type=&quot;math/tex&quot;&gt;f(x)=a_0+a_1x+a_2*x^2+...+a_n*x^n=a_0+...+x(a_{n-2}+x*(a_{n-1}+a_n*x))&lt;/script&gt;
+&lt;h4 id=&quot;抽象数据类型abstract-data-type&quot;&gt;抽象数据类型Abstract Data Type&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;数据对象集&lt;/li&gt;
+  &lt;li&gt;数据对象集上的操作
+ &lt;img src=&quot;./img/ADT.png&quot; alt=&quot;ADT&quot; /&gt;
+    &lt;h4 id=&quot;选择排序&quot;&gt;选择排序&lt;/h4&gt;
+    &lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;selectionSort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+ 	&lt;span class=&quot;n&quot;&gt;minPosition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+     &lt;span class=&quot;n&quot;&gt;swap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minPosition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;h4 id=&quot;衡量算法的指标&quot;&gt;衡量算法的指标&lt;/h4&gt;
+    空间复杂度 $S(n)$
+时间复杂度$T(n)$:可以只去计算乘除法的的次数,因为计算加减比计算乘除快得多
+&lt;img src=&quot;./img/progress.png&quot; alt=&quot;progress&quot; /&gt;
+&lt;img src=&quot;./img/On.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;./img/Onimg.png&quot; alt=&quot;&quot; /&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;算法复杂度分析技巧&quot;&gt;算法复杂度分析技巧&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;$O(f_1(n)+f_2(n))=max(O(f_1(n)),O(f_2(n)))$,代码拼接&lt;/li&gt;
+  &lt;li&gt;$O(f_1(n)&lt;em&gt;f_2(n))=O(f_1(n))&lt;/em&gt;O(f_2(n))$,代码嵌套&lt;/li&gt;
+  &lt;li&gt;若T(n)是关于n的k阶多项式,则$T(n)= \Theta(n)$&lt;/li&gt;
+  &lt;li&gt;一个for循环的时间复杂度等于循环次数乘以循环体代码的复杂度&lt;/li&gt;
+  &lt;li&gt;if-else 结构的复杂度取决于if的条件判断复杂度和两个分枝部分的复杂度，总体复杂度取三者中最大&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;最大子列和问题&quot;&gt;最大子列和问题&lt;/h4&gt;
+给定N个整数的序列${A_1,A_2,…,A_N}$,求函数$f(i,j)=max{0,\sum_{k=i}^jA_k}$
+&lt;h5 id=&quot;算法1分治法&quot;&gt;算法1:分治法&lt;/h5&gt;
+&lt;img src=&quot;./img/Divide.png&quot; alt=&quot;&quot; /&gt;
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;SubSequenceMax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;low&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;high&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h5 id=&quot;算法2在线处理&quot;&gt;算法2:在线处理&lt;/h5&gt;
+&lt;img src=&quot;./img/OnLine.png&quot; alt=&quot;&quot; /&gt;
+
+&lt;strong&gt;这里给了两个课后练习题,第一题是基础版的最大子列和问题,第二题是提高版的最大子列和问题&lt;/strong&gt;
+&lt;img src=&quot;./img/MaxSubPAT1.png&quot; alt=&quot;&quot; /&gt;
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;vector&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;vector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;cin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;push_back&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thisSum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxSum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;thisSum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxSum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;thisSum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thisSum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxSum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;maxSum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thisSum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thisSum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;thisSum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxSum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;img src=&quot;./img/MaxSubPAT2.png&quot; alt=&quot;&quot; /&gt;
+
+&lt;strong&gt;解决这个问题的时候,自己并没有写出完全正确的算法,这是参考别人代码改进的&lt;/strong&gt;
+&lt;strong&gt;这个方法的巧妙之处在于,使用tempIndex变量,记录可能的i值&lt;/strong&gt;
+
+&lt;div class=&quot;language-cpp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;vector&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;K&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;vector&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;cin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;K&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;K&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tempIndex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thisSum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maxSum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;K&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;push_back&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;thisSum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thisSum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxSum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;maxSum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thisSum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tempIndex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thisSum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;thisSum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;tempIndex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxSum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;maxSum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxSum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Sat, 29 Sep 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/09/29/DataStructure-ChenHe1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/09/29/DataStructure-ChenHe1/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Andrewng Ml Index</title>
+        <description>&lt;h2 id=&quot;andrewng-ml-learning-notes&quot;&gt;AndrewNg ML Learning Notes&lt;/h2&gt;
+&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/home/welcome&quot;&gt;https://www.coursera.org/learn/machine-learning/home/welcome&lt;/a&gt;
+
+&lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;Week1.md&quot;&gt;Week 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;Week2.md&quot;&gt;Week 2&lt;/a&gt;update soon…&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;Week3.md&quot;&gt;Week 3&lt;/a&gt;update soon…&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;Week4.md&quot;&gt;Week 4&lt;/a&gt;update soon…&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;Week5.md&quot;&gt;Week 5&lt;/a&gt;update soon…&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 29 Sep 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/09/29/AndrewNg-ML-index/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/09/29/AndrewNg-ML-index/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Andrewng Ml Week5</title>
+        <description>
+</description>
+        <pubDate>Sat, 29 Sep 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/09/29/AndrewNg-ML-Week5/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/09/29/AndrewNg-ML-Week5/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Andrewng Ml Week4</title>
+        <description>
+</description>
+        <pubDate>Sat, 29 Sep 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/09/29/AndrewNg-ML-Week4/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/09/29/AndrewNg-ML-Week4/</guid>
+        
         
       </item>
     
