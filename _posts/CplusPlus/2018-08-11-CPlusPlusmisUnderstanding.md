@@ -1,6 +1,20 @@
-## C++误区
+---
+layout:	post
+title:	"C++ 误区"
+data:	2018-08-11 14:00:00
+categories: CPlusPLus
+tags:	CPP 
+author: Lydia
+mathjax: true
+
+---
+
+* content
+{:toc}
 
 这是一篇记录自己在使用C++过程中出现误区的地方，没有什么逻辑顺序，仅记录而已。
+
+
 
 [TOC]
 ###1数组的声明和初始化

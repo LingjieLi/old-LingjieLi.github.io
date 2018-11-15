@@ -1,11 +1,12 @@
 ---
 layout:	post
-title:	"3.3二叉树遍历"
+title:	"数据结构(陈越何钦铭) 树(上)3.3-二叉树遍历"
 data:	2018-11-15 14:00:00
 categories: LearnDataStructure
 tags:	二叉树 BinaryTree
-author: lydia Lee
+author: Lydia
 mathjax: true
+
 ---
 
 * content
@@ -29,7 +30,7 @@ mathjax: true
 
 **先序、中序和后序遍历过程：**遍历过程中经过的结点的路线一样，只是访问各结点的时机不一样
 从入口到出口的曲线上用圆圈叉号、星号和三角三种符号分别标记出了先序、中序和后序访问各结点的时刻
-![](./img/ResearchTime.png)
+![](https://raw.githubusercontent.com/LingjieLi/LingjieLi.github.io/master/images/ResearchTime.png)
 #### **3.3.2 实现方式**
 递归实现、非递归实现
 
@@ -57,7 +58,7 @@ typedef struct BiNode
     BiNode *rChild=NULL;
 } BiNode,*BiTree;
 ```
-![](./img/TreeData.png)
+![](https://raw.githubusercontent.com/LingjieLi/LingjieLi.github.io/master/images/TreeData.png)
 **构建树**
 ```cpp
 BiTree createTree(string filename)
@@ -102,7 +103,7 @@ BiTree createTree(string filename)
 Preoreder traversal:
 A B D F E C G H I
 ```
-![](./img/PreOrder.png)
+![](https://raw.githubusercontent.com/LingjieLi/LingjieLi.github.io/master/images/PreOrder.png)
 **递归实现**
 ```cpp
 //递归前序遍历
@@ -150,7 +151,7 @@ void NonRecursionPreOrderTraversal(BiTree bitree)
 Inorder traversal:
 D B E F A G H C I
 ```
-![](./img/InOrder.png)
+![](https://raw.githubusercontent.com/LingjieLi/LingjieLi.github.io/master/images/InOrder.png)
 **递归实现**
 ```cpp
 //递归中序遍历
@@ -193,7 +194,7 @@ D E F B H G I C A
 ```
 **递归实现**
 与前序遍历、后序遍历套路相同
-![](./img/PostOrder.png)
+![](https://raw.githubusercontent.com/LingjieLi/LingjieLi.github.io/master/images/PostOrder.png)
 ```cpp
 //递归后序遍历
 void RecursionPostOrderTraversal(BiTree bitree)
@@ -256,7 +257,7 @@ void NonRecursionPostOrderTraversal(BiTree bitree)
 Level Order Traversal:
 A B C D F G I E H
 ```
-![](./img/LevelOrder.png)
+![](https://raw.githubusercontent.com/LingjieLi/LingjieLi.github.io/master/images/LevelOrder.png)
 ```cpp
 //层次遍历
 void LevelOrderTraversal(BiTree bitree)
@@ -334,7 +335,7 @@ void PreOrderPrintLeaves(BiTree bitree)
 ```
 
 ##### **2)输出二叉树深度**
-![](./img/BiTreeHeight.png)
+![](https://raw.githubusercontent.com/LingjieLi/LingjieLi.github.io/master/images/BiTreeHeight.png)
 
 ```cpp
 //得到树的深度
@@ -358,5 +359,5 @@ int PostOrderGetHeight(BiTree bitree)
 
 ##### **3)二叉树恢复**
 前序中序或中序后序
-![](./img/RecoverBiTree.png)
+![](https://raw.githubusercontent.com/LingjieLi/LingjieLi.github.io/master/images/RecoverBiTree.png)
 

@@ -1,8 +1,24 @@
-## 1098 Insertion or Heap Sort
+---
+layout:	post
+title:	"1098 Insertion or Heap Sort"
+data:	2018-06-17 14:00:00
+categories: Prctrice
+tags:	C++ Algorithm
+author: Lydia
+mathjax: true
+
+---
+
+* content
+{:toc}
+
+这是一篇PAT题目的集合
+
+
 
 [TOC]
 
-### 题目
+### **题目**
 ```
 1098 Insertion or Heap Sort (25)（25 分）
 According to Wikipedia:
@@ -40,7 +56,7 @@ Sample Output 2:
 Heap Sort
 5 4 3 1 0 2 6 7 8 9
 ```
-### 解析
+### **解析**
 
-### 代码
-### SaySomething
+### **代码**
+### **SaySomething**
