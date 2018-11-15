@@ -1,6 +1,6 @@
 ---
 layout:	post
-title:	数据结构(陈越何钦铭) 1-数据结构是什么"
+title:	"数据结构(陈越何钦铭) 1-数据结构是什么"
 data:	2018-10-17 14:00:00
 categories: LearnDataStructure
 tags:	DataStructure 
