@@ -48,8 +48,7 @@ I - -
 E - -
 H - -
 ```
-![]({{"/images/TreeDataDia.png"}}|"LingjieLi.github.io/images/TreeDataDia.png")
-**树的存储结构结构**
+![](https://raw.githubusercontent.com/LingjieLi/LingjieLi.github.io/master/images/TreeDataDia.png)
 ```cpp
 typedef struct BiNode
 {
