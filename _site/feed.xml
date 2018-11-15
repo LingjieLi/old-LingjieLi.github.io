@@ -5,9 +5,28 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Nov 2018 19:52:59 +0800</pubDate>
-    <lastBuildDate>Thu, 15 Nov 2018 19:52:59 +0800</lastBuildDate>
+    <pubDate>Thu, 15 Nov 2018 20:01:28 +0800</pubDate>
+    <lastBuildDate>Thu, 15 Nov 2018 20:01:28 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>3.3二叉树遍历</title>
+        <description>
+本文主要记录在MOOC上学习到的二叉树遍历相关主题
+
+</description>
+        <pubDate>Thu, 15 Nov 2018 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2018/11/15/DataStructure-ChenHe3.3/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/11/15/DataStructure-ChenHe3.3/</guid>
+        
+        <category>二叉树</category>
+        
+        <category>BinaryTree</category>
+        
+        
+        <category>LearnDataStructure</category>
+        
+      </item>
     
       <item>
         <title>3.3二叉树遍历</title>
@@ -431,17 +450,6 @@ $n_0=n_2+1$
         <pubDate>Sat, 29 Sep 2018 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2018/09/29/AndrewNg-ML-Week5/</link>
         <guid isPermaLink="true">http://localhost:4000/2018/09/29/AndrewNg-ML-Week5/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Andrewng Ml Week4</title>
-        <description>
-</description>
-        <pubDate>Sat, 29 Sep 2018 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2018/09/29/AndrewNg-ML-Week4/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/09/29/AndrewNg-ML-Week4/</guid>
         
         
       </item>
