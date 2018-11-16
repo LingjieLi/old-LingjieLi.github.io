@@ -2,7 +2,7 @@
 layout: post
 title:  "error while loading shared libraries"
 date:   2018-11-16 22:14:54
-categories: jekyll
+categories: Miscellaneous
 tags: Ubuntu library
 excerpt: 第一次在Ubuntu上使用CGAL库遇到此问题
 mathjax:	true
