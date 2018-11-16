@@ -38,7 +38,7 @@ lydia@lydia-desktop:~/Code/LearnCGAL/SegmentationWithSDF/build-SegmentationWithS
 
 ```
 
-**我本来是`libCGAL.so.13`**找不到的,但是我再`.pro`文件内包含了的,应该是这样的我这个动态库安装在`/俗人/local/lib`文件夹下,属于系统位置?应该是能够自己搜索到的?
+**我本来是`libCGAL.so.13`**找不到的,但是我再`.pro`文件内包含了的,应该是这样的我这个动态库安装在`/usr/local/lib`文件夹下,属于系统位置?应该是能够自己搜索到的?
 
 #### **3.2分类解决**
 
