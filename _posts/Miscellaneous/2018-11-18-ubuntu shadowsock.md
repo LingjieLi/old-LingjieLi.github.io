@@ -41,5 +41,6 @@ sudo ss-local -c ./myss.json
 **OK**
 **chrome**
 扩展->搜索SwitchySharp->安装
-![](https://raw.githubusercontent.com/LingjieLi/LingjieLi.github.io/master/images/switchysharpsetting1.png.png)
-![](https://raw.githubusercontent.com/LingjieLi/LingjieLi.github.io/master/images/switchysharpsetting2.png.png)
+![](https://raw.githubusercontent.com/LingjieLi/LingjieLi.github.io/master/images/switchysharpsetting1.png)
+![](https://raw.githubusercontent.com/LingjieLi/LingjieLi.github.io/master/images/switchysharpsetting2.png)
+
