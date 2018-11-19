@@ -27,7 +27,8 @@ disqus_shortname: #gaohaoyang
 kuaizhan_appid: #cytVqaNQp
 leancloud_appid: #64o3Yn1DpEhq5VioLnGgqHzO-gzGzoHsz
 leancloud_appkey: #CqMWVaMap2W9s7Cq8QJKWKLP
-gitment: true
+gitment_id: 3194ede0eb483110728d
+gitment_cs: 025b0705601014a78c50630d9865f9deef6e54c3
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
