@@ -23,14 +23,15 @@ description_footer: 我的博客
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
 duoshuo_shortname: #hygblog
-disqus_shortname: gaohaoyang
+disqus_shortname: #gaohaoyang
+kuaizhan_appid: cytVqaNQp
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
-baidu_tongji_id: f2e4724430b94781b7e7912bfb6e03ea
-google_analytics_id: UA-72449510-4 # google 分析追踪id
+baidu_tongji_id: 73b88dd4f2e804dd85e6e529651931b8
+google_analytics_id: UA-129421066-1 # google 分析追踪id
 
 # Build settings
 markdown: kramdown
