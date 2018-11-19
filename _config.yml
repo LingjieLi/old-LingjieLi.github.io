@@ -24,9 +24,10 @@ description_footer: 我的博客
 # 两种评论插件，选一个就好了，使用自己的 short_name
 duoshuo_shortname: #hygblog
 disqus_shortname: #gaohaoyang
-kuaizhan_appid: cytVqaNQp
-leancloud_appid: 64o3Yn1DpEhq5VioLnGgqHzO-gzGzoHsz
-leancloud_appkey: CqMWVaMap2W9s7Cq8QJKWKLP
+kuaizhan_appid: #cytVqaNQp
+leancloud_appid: #64o3Yn1DpEhq5VioLnGgqHzO-gzGzoHsz
+leancloud_appkey: #CqMWVaMap2W9s7Cq8QJKWKLP
+gitment: true
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即

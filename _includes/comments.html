@@ -74,3 +74,21 @@
         })
     </script>
 {% endif %}
+
+{% if site.gitment %}
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'location.href', // 可选。默认为 location.href
+        owner: 'LingjieLi',  //改你自己的名字
+        repo: 'LingjieLi.github.io',  //专门储存评论一个GitHub仓库
+        oauth: {
+            client_id: 'deb30d7d0e002cf635ce', //改为你自己的，下同
+            client_secret: 'ccf6fb641f95ab84fcb5311a99bcfaeb226d2755',
+        },
+    })
+    gitment.render('container')
+</script>
+{% endif %}
