@@ -1,13 +1,14 @@
 {% if site.duoshuo_shortname %}
 <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="{{ site.url }}{{ page.url }}" data-title="{{page.title}}" data-url="{{ site.url }}{{ page.url }}"></div>
+<div class="ds-thread" data-thread-key="{{ site.url }}{{ page.url }}" data-title="{{page.title}}"
+    data-url="{{ site.url }}{{ page.url }}"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
     var duoshuoQuery = {
         short_name: "{{site.duoshuo_shortname}}"
     };
-    (function() {
+    (function () {
         var ds = document.createElement('script');
         ds.type = 'text/javascript';
         ds.async = true;
@@ -27,12 +28,12 @@
      * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
      */
 
-    var disqus_config = function() {
+    var disqus_config = function () {
         this.page.url = '{{ site.url }}{{ page.url }}'; // Replace PAGE_URL with your page's canonical URL variable
         this.page.identifier = '{{ site.url }}{{ page.url }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 
-    (function() { // DON'T EDIT BELOW THIS LINE
+    (function () { // DON'T EDIT BELOW THIS LINE
         var d = document,
             s = d.createElement('script');
 
@@ -42,7 +43,8 @@
         (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments
+        powered by Disqus.</a></noscript>
 {% endif %}
 
 {% if site.kuaizhan_appid %}
@@ -61,34 +63,34 @@
             window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>');
         } else { var loadJs = function (d, a) { var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement; var b = document.createElement("script"); b.setAttribute("type", "text/javascript"); b.setAttribute("charset", "UTF-8"); b.setAttribute("src", d); if (typeof a === "function") { if (window.attachEvent) { b.onreadystatechange = function () { var e = b.readyState; if (e === "loaded" || e === "complete") { b.onreadystatechange = null; a() } } } else { b.onload = a } } c.appendChild(b) }; loadJs("https://changyan.sohu.com/upload/changyan.js", function () { window.changyan.api.config({ appid: appid, conf: conf }) }); }
     })();
- </script>
+</script>
 {% endif %}
 
 {% if site.leancloud_appid %}
-    <div id="vcomments"></div>
-    <script>
-        new Valine({
-            el: '#vcomments',
-            appId: "{{leancloud_appid}}",
-            appKey: "{{leancloud_appkey}}"
-        })
-    </script>
+<div id="vcomments"></div>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: "{{leancloud_appid}}",
+        appKey: "{{leancloud_appkey}}"
+    })
+</script>
 {% endif %}
 
 {% if site.gitment_id %}
-<div id="gitment"></div>
+<div id="container"></div>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
     var gitment = new Gitment({
-        id: '{{page.date}}', // 可选。默认为 location.href
-        owner: 'lydia',  //改你自己的名字
-        repo: 'LingjieLi.github.io',  //专门储存评论一个GitHub仓库
+        id: '{{page.date}}', // 可选。默认为 location.href  比如我本人的就删除了
+        owner: 'lydia',              //比如我的叫anTtutu
+        repo: 'LingjieLi.github.io',                 //比如我的叫anTtutu.github.io
         oauth: {
-            client_id: 'gitment_id', //改为你自己的，下同
-            client_secret: 'gitment_cs',
+            client_id: 'gitment_id',          //比如我的828***********
+            client_secret: 'gitment_cs',  //比如我的49e************************
         },
     })
-    gitment.render('gitment')
+    gitment.render('container')
 </script>
 {% endif %}
