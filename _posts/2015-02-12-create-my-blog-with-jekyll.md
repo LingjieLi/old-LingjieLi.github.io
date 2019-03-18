@@ -13,8 +13,7 @@ tags: jekyll RubyGems
 
 
 
-
-
+cite:[https://gaohaoyang.github.io/2015/02/15/create-my-blog-with-jekyll/](高浩阳的博客)
 ## 搭建过程
 
 在jekyll的官网上 [http://jekyllrb.com/](http://jekyllrb.com/) 其实已经说得比较明白了，我在这里还是简单的说一下吧。我用的是Windows系统。    
