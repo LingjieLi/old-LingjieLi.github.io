@@ -13,6 +13,8 @@ mathjax: true
 边学习,边记录,shell notes
 
 
+
+
 # 一、shell 常用命令
 
 ## 1.**ssh登陆不能在命令行中指定密码。** 
