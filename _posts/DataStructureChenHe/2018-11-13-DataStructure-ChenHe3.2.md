@@ -4,20 +4,11 @@ title:	"数据结构(陈越何钦铭) 树(上)3.2-二叉树及存储结构"
 data:	2018-11-13 14:00:00
 categories: LearnDataStructure
 tags:	树
+excerpt: 这是一篇记录自己在学习MOOC树的文章
 author: Lydia
 mathjax: true
-
 ---
 
-* content
-{:toc}
-
-这是一篇记录自己在学习MOOC树的文章
-
-
-
-
-[TOC]
 #### **1.1二叉树的定义**
 **二叉树$T$:一个有穷的结点集合**
 这个集合可以为空，如果不为空，则它由根节点和称为其左子树$T_L$和右子树$T_R$的两个不相交的二叉树组成

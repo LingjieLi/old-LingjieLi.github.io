@@ -4,19 +4,10 @@ title:	"1098 Insertion or Heap Sort"
 data:	2018-06-17 14:00:00
 categories: Prctrice
 tags:	C++ Algorithm
+excerpt: 这是一篇PAT题目的集合
 author: Lydia
 mathjax: true
-
 ---
-
-* content
-{:toc}
-
-这是一篇PAT题目的集合
-
-
-
-[TOC]
 
 ### **题目**
 ```

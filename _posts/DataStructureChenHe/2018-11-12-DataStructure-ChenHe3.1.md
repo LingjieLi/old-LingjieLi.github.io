@@ -4,19 +4,11 @@ title:	"数据结构(陈越何钦铭) 树(上)3.1-树与树的表示"
 data:	2018-10-17 14:00:00
 categories: LearnDataStructure
 tags:	树
+excerpt: 这是一篇记录自己在学习MOOC树的文章
 author: Lydia
 mathjax: true
-
 ---
 
-* content
-{:toc}
-
-这是一篇记录自己在学习MOOC树的文章
-
-
-
-[TOC]
 #### **1.1树的表示**
 儿子兄弟表示法：每个结点有三个部分组成，结点本身的数据，儿子结点，兄弟结点
 

@@ -4,19 +4,11 @@ title:	"数据结构(陈越何钦铭) 线性结构2.2-堆栈(Stack)"
 data:	2018-10-17 14:00:00
 categories: LearnDataStructure
 tags:	线性结构 堆栈 Stack
+excerpt: 这是一篇记录自己在学习MOOC线性结构-堆栈的文章
 author: Lydia
 mathjax: true
-
 ---
 
-* content
-{:toc}
-
-这是一篇记录自己在学习MOOC线性结构-堆栈的文章
-
-
-
-[TOC]
 **堆栈是一种线性结构,是一种特殊的线性表**,入栈和出战只能在栈顶操作,在递归,函数调用,表达式求值,深度优先搜索,回溯算法中有广泛的应用
 
 #### **1.引例:表达式求值**

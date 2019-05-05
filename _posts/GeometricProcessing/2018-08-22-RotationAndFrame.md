@@ -4,17 +4,10 @@ title:	"三维旋转变换和局部正交标架(Rotation and Frame)"
 data:	2018-08-22 14:00:00
 categories: GeometricProcessing
 tags:	计算机图形学 CG 变换
+excerpt: 这是一篇记录自己学习过程中的文章
 author: Lydia
 mathjax: true
-
 ---
-
-* content
-{:toc}
-
-这是一篇记录自己学习过程中的文章
-
-
 
 [TOC]
 **!还有问题，基本思路是对的**

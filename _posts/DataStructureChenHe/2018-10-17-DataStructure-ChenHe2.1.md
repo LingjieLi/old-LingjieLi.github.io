@@ -4,19 +4,10 @@ title:	"数据结构(陈越何钦铭) 线性结构2.1-线性表(List)"
 data:	2018-10-17 14:00:00
 categories: LearnDataStructure
 tags:	线性结构 线性表 List
+excerpt: 这是一篇记录自己在学习MOOC线性结构-线性表的文章
 author: Lydia
 mathjax: true
-
 ---
-
-* content
-{:toc}
-
-这是一篇记录自己在学习MOOC线性结构-线性表的文章
-
-
-
-[TOC]
 
 ### **引入:多项式的表示及运算**
 #### 顺序存储结构直接表示

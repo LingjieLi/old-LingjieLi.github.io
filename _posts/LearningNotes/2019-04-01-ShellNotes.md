@@ -4,16 +4,10 @@ title:	"shell notes"
 data:	2019-04-01 14:00:00
 categories: shell
 tags:	shell notes 
+excerpt: 边学习,边记录,shell notes
 author: Lydia
 mathjax: true
-
 ---
-
-
-边学习,边记录,shell notes
-
-
-
 
 # 一、shell 常用命令
 

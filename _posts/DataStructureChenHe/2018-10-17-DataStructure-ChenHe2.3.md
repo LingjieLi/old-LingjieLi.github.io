@@ -4,19 +4,11 @@ title:	"数据结构(陈越何钦铭) 线性结构2.3-队列(Queue)"
 data:	2018-10-17 14:00:00
 categories: LearnDataStructure
 tags:	线性结构 队列 Queue
+excerpt: 这是一篇记录自己在学习MOOC线性结构-队列的文章
 author: Lydia
 mathjax: true
-
 ---
 
-* content
-{:toc}
-
-这是一篇记录自己在学习MOOC线性结构-队列的文章
-
-
-
-[TOC]
 **堆栈是一种受限制的线性结构**,是一种特殊的线性表
 入队只能在队尾进行,出队只能在队头进行
 

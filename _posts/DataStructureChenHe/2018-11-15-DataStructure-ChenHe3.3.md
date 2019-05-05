@@ -4,19 +4,11 @@ title:	"数据结构(陈越何钦铭) 树(上)3.3-二叉树遍历"
 data:	2018-11-15 14:00:00
 categories: LearnDataStructure
 tags:	二叉树 BinaryTree
+excerpt: 本文主要记录在MOOC上学习到的二叉树遍历相关主题
 author: Lydia
 mathjax: true
-
 ---
 
-* content
-{:toc}
-
-本文主要记录在MOOC上学习到的二叉树遍历相关主题
-
-
-
-[TOC]
 #### **3.3.1遍历方式**
 先序遍历、中序遍历、后序遍历、层次遍历
 

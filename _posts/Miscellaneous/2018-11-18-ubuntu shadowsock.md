@@ -6,11 +6,7 @@ categories: Miscellaneous
 tags: ubuntu shadowsock
 excerpt: 记录/介绍在ubuntu上使用shadowsock
 mathjax:	true
-
 ---
-
-* content
-{:toc}
 
 #### **安装shadowsocks**
 `sudo apt install -y shadowsocks-libev`

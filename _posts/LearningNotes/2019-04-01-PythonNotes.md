@@ -7,9 +7,7 @@ tags:	python notes
 excerpt: 边学习,边记录,python notes
 author: Lydia
 mathjax: true
-
 ---
-
 
 # python notes
 

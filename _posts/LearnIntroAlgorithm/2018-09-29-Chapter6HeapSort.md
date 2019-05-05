@@ -4,19 +4,11 @@ title:	"Chapter6 堆排序(HeapSort)"
 data:	2018-09-29 14:00:00
 categories: IntroduceAlgorithm(算法导论)
 tags:	排序 堆排序 HeapSort
+excerpt: 学习这一章后，我才明白堆，指的是二叉堆，例如C++中的map就是使用最大堆来保存数据，所以当我们无论使用[]操作符或者使用迭代获取数据时，和插入时的顺序并不相同
 author: Lydia
 mathjax: true
-
 ---
 
-* content
-{:toc}
-
-学习这一章后，我才明白堆，指的是二叉堆，例如C++中的map就是使用最大堆来保存数据，所以当我们无论使用[]操作符或者使用迭代获取数据时，和插入时的顺序并不相同
-
-
-
-[TOC]
 ```
 代码索引
 6.2维护堆的性质

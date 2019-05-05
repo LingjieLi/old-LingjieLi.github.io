@@ -2,12 +2,11 @@
 layout: post
 title: "C++ with VSCode"
 data: 2019-3-14 18:25:00
-categories: CPlusPLus
+categories: CPlusPlus
 tags:	CPP 
 excerpt: 在VSCode中调试C++
 author: Lydia
 mathjax: true
-
 ---
 
 ## 1.安装插件
