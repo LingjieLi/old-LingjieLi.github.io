@@ -7,7 +7,7 @@
 
 # Site settings
 title: LingjieLi
-brief-intro:  Gomputer Graphics/Algorithm
+brief-intro:  Gomputer Graphics/Algorithm/Linux/Server/Architecture
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://LingjieLi.github.io" # the base hostname & protocol for your site
 
