@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "C++ with VSCode"
+title: "Qt With MVC"
 data: 2019-5-01 18:25:00
 categories: CPlusPlus
 tags:	CPP Qt MVC
