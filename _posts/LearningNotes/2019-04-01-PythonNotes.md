@@ -4,14 +4,11 @@ title:	"python notes"
 data:	2019-04-02 14:00:00
 categories: python
 tags:	python notes 
+excerpt: 边学习,边记录,python notes
 author: Lydia
 mathjax: true
 
 ---
-
-
-边学习,边记录,python notes
-
 
 
 # python notes

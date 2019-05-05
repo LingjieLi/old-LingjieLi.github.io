@@ -4,19 +4,11 @@ title: "C++ with VSCode"
 data: 2019-3-14 18:25:00
 categories: CPlusPLus
 tags:	CPP 
+excerpt: 在VSCode中调试C++
 author: Lydia
 mathjax: true
 
 ---
-
-* content
-{:toc}
-
-在VSCode中调试C++
-
-
-
-[TOC]
 
 ## 1.安装插件
 

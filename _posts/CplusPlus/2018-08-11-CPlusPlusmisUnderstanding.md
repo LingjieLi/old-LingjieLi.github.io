@@ -4,14 +4,11 @@ title:	"C++ 误区"
 data:	2018-08-11 14:00:00
 categories: CPlusPLus
 tags:	CPP 
+excerpt: 这是一篇记录自己在使用C++过程中出现误区的地方，没有什么逻辑顺序，仅记录而已。
 author: Lydia
 mathjax: true
 
 ---
-
-
-
-这是一篇记录自己在使用C++过程中出现误区的地方，没有什么逻辑顺序，仅记录而已。
 
 
 ###1数组的声明和初始化
