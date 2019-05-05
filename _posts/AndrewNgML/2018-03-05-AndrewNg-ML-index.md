@@ -4,19 +4,11 @@ title:	"吴恩达机器学习笔记(AndrewNg ML Learning Notes)"
 data:	2018-03-05 14:00:00
 categories: MachineLearning
 tags:	机器学习 ML 吴恩达 AndrewNg
+excerpt: 这是一篇记录吴恩达机器学习笔记(AndrewNg ML Learning Notes)的集合
 author: Lydia
 mathjax: true
-
 ---
 
-* content
-{:toc}
-
-这是一篇记录吴恩达机器学习笔记(AndrewNg ML Learning Notes)的集合
-
-
-
-[TOC]
 [https://www.coursera.org/learn/machine-learning/home/welcome](https://www.coursera.org/learn/machine-learning/home/welcome)
 
 ### Notes

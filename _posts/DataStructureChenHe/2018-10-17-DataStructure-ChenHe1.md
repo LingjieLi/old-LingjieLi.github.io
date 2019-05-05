@@ -4,19 +4,11 @@ title:	"数据结构(陈越何钦铭) 1-数据结构是什么"
 data:	2018-10-17 14:00:00
 categories: LearnDataStructure
 tags:	DataStructure 
+excerpt: 本文主要记录在MOOC上学习到的是数据结构第一节。
 author: Lydia
 mathjax: true
-
 ---
 
-* content
-{:toc}
-
-本文主要记录在MOOC上学习到的是数据结构第一节。
-
-
-
-[TOC]
 #### **秦九韶算法**
  $$ f(x)=a_0+a_1x+a_2*x^2+...+a_n*x^n=a_0+...+x(a_{n-2}+x*(a_{n-1}+a_n*x)) $$
 #### **抽象数据类型Abstract Data Type**
