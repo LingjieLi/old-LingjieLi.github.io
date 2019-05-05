@@ -1,26 +1,33 @@
-## 2.Add Two Numbers
+---
+layout:	post
+title:	"LeetCode_002 Add Two Numbers"
+data:	2019-03-05 21:09:01
+categories: LeetCode
+tags: Linked-List Arrays LeetCode Easy
+excerpt: LeetCode 第002题
+author: Lydia
+mathjax: true
+---
+
+## **002.Add Two Numbers**
 [TOC]
 
-### Description
-- 地址
+### **Description**
+- 地址  
 [https://leetcode.com/problems/add-two-numbers/](https://leetcode.com/problems/add-two-numbers/)
 
 - 题目
-
->You are given two non-empty linked lists representing two >non-negative integers. The digits are stored in reverse >order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
-
+>You are given two non-empty linked lists representing two >non-negative integers. The digits are stored in reverse >order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.  
 >You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+>Example:    
+>Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)  
+>Output: 7 -> 0 -> 8  
+>Explanation: 342 + 465 = 807.  
 
->Example:
-
->Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
->Output: 7 -> 0 -> 8
->Explanation: 342 + 465 = 807.
-
-- 解析
+- 解析  
 ![https://leetcode.com/problems/add-two-numbers/Figures/2_add_two_numbers.svg](https://leetcode.com/problems/add-two-numbers/Figures/2_add_two_numbers.svg)
 
-- 步骤
+- 步骤  
  1.初始化结果链表$result&，表头设置为0
  2.初始化结果链表指针p为表头
  3.初始化l1和l2链表指针pl1和pl2
@@ -35,9 +42,7 @@
  6.如果carry!=0,在result链表结尾追加一个节点，值为1
  7.返回结果链表result
 
-
-### Wrong Solution
-
+### **Wrong Solution**
 我直接用的两个数值相加的方法，最后扩大到`long`类型，只有**1560 / 1563 test cases passed.**.所以这道题的终极解决办法还是自己按照位数做加法。
 ```cpp
 class Solution
@@ -92,12 +97,11 @@ class Solution
      }
  };
 ```
-### Good Solution
+### **Good Solution**
 
 这里给出的Good Solution 时间复杂度仍然是$O(m+n)$，只是在代码上更简洁一下罢了
 
-#### 在这份代码中，值得被借鉴的写法
-
+#### **在这份代码中，值得被借鉴的写法**
 - 两条链表中只要有一条还有数字，就要继续做加法。如果有一条链表没有元素了，那么它的加数就为0
 	```cpp
     while (pl1 != NULL || pl2 != NULL)
@@ -124,9 +128,9 @@ class Solution
    {
       p->next=new ListNode(1);
    }
-```
+   ```
+#### **Solution**
 
-#### Solution
 ```cpp
 //Good Solution
 class Solution
@@ -158,18 +162,18 @@ class Solution
     }
 };
 ```
-### Commont
-#### int,long,unsigned long,long long
-| 类型 | 长度 |范围(min)|范围(max)|
-|--------|--------|--------|--------|
-|char		|8	|		-128|127|
-|short(短整型)|16	|-32768	|32767	|
-|int(整型)	|32      |-2147483648|2147483647|
-|unsigned int|32|0|4294967295|
-|long(长整型)	|64|-9223372036854775808        |9223372036854775807|
-|unsigned long	|64|0|18446744073709551615|
-|double||-1.79769e+308|1.79769e+308|
-|float||-3.40282e+38|3.40282e+38|
+### **Commont**
+#### **int,long,unsigned long,long long**
+| 类型          | 长度 | 范围(min)            | 范围(max)            |
+| ------------- | ---- | -------------------- | -------------------- |
+| char          | 8    | -128                 | 127                  |
+| short(短整型) | 16   | -32768               | 32767                |
+| int(整型)     | 32   | -2147483648          | 2147483647           |
+| unsigned int  | 32   | 0                    | 4294967295           |
+| long(长整型)  | 64   | -9223372036854775808 | 9223372036854775807  |
+| unsigned long | 64   | 0                    | 18446744073709551615 |
+| double        |      | -1.79769e+308        | 1.79769e+308         |
+| float         |      | -3.40282e+38         | 3.40282e+38          |
 
 **！没有long long 类型**
-#### How to input in C++?
+#### **How to input in C++?**
