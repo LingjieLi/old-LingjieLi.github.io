@@ -9,6 +9,9 @@ author: Lydia
 mathjax: true
 ---
 
+* content
+{:toc}
+
 ### **引入:多项式的表示及运算**
 #### 顺序存储结构直接表示
 **使用数组元素 $a[i]$ 存储 $x^i$ 的系数 $a_i$**

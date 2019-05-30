@@ -9,6 +9,9 @@ author: Lydia
 mathjax: true
 ---
 
+* content
+{:toc}
+
 #### **秦九韶算法**
  $$ f(x)=a_0+a_1x+a_2*x^2+...+a_n*x^n=a_0+...+x(a_{n-2}+x*(a_{n-1}+a_n*x)) $$
 #### **抽象数据类型Abstract Data Type**

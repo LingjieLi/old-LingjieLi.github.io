@@ -9,6 +9,9 @@ author: Lydia
 mathjax: true
 ---
 
+* content
+{:toc}
+
 ```
 代码索引
 6.2维护堆的性质

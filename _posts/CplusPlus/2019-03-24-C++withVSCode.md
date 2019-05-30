@@ -9,6 +9,9 @@ author: Lydia
 mathjax: true
 ---
 
+* content
+{:toc}
+
 ## 1.安装插件
 
 C/C++(必要插件)

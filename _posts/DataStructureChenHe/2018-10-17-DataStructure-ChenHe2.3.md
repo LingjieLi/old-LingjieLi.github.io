@@ -9,6 +9,9 @@ author: Lydia
 mathjax: true
 ---
 
+* content
+{:toc}
+
 **堆栈是一种受限制的线性结构**,是一种特殊的线性表
 入队只能在队尾进行,出队只能在队头进行
 

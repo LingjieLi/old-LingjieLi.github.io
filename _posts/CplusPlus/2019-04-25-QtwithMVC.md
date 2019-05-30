@@ -8,3 +8,6 @@ excerpt: 使用MVC模式设计Qt程序
 author: Lydia
 mathjax: true
 ---
+
+* content
+{:toc}

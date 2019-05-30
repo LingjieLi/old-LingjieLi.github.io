@@ -9,6 +9,9 @@ author: Lydia
 mathjax: true
 ---
 
+* content
+{:toc}
+
 ### **题目**
 ```
 1098 Insertion or Heap Sort (25)（25 分）

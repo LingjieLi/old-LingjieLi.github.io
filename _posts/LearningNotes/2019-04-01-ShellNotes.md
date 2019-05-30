@@ -9,6 +9,9 @@ author: Lydia
 mathjax: true
 ---
 
+* content
+{:toc}
+
 # 一、shell 常用命令
 
 ## 1.**ssh登陆不能在命令行中指定密码。** 

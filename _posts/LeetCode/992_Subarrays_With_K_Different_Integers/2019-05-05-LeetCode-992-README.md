@@ -9,8 +9,10 @@ author: Lydia
 mathjax: true
 ---
 
+* content
+{:toc}
+
 ### **992.Subarrays with K Different Integers**
-[TOC]  
 
 解决这一题目的时候主要考虑到效率问题，我一开始也想到用滑动窗口解决，但是因为窗口前端和后端不是递增的，导致时间复杂度为$O(n^2)$，结果超时了，题目给的数据规模小于一万，因此需要更高效的算法。
 ### **Description**

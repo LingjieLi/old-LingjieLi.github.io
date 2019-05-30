@@ -9,6 +9,9 @@ author: Lydia
 mathjax: true
 ---
 
+* content
+{:toc}
+
 # python notes
 
 ###  1. `r''` 取消转义

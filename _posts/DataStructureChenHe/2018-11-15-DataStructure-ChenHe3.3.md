@@ -9,6 +9,9 @@ author: Lydia
 mathjax: true
 ---
 
+* content
+{:toc}
+
 ## **3.3.1遍历方式**
 先序遍历、中序遍历、后序遍历、层次遍历(广度优先遍历)
 

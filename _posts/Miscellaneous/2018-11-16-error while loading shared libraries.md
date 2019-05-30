@@ -8,6 +8,9 @@ excerpt: 第一次在Ubuntu上使用CGAL库遇到此问题
 mathjax:	true
 ---
 
+* content
+{:toc}
+
 ### **1 问题**
 >/home/lydia/Code/LearnCGAL/SegmentationWithSDF/build-SegmentationWithSDF-Desktop_Qt_5_11_2_GCC_64bit-Debug/SegmentationWithSDF: error while loading shared libraries: libCGAL.so.13: cannot open shared object file: No such file or directory
 
