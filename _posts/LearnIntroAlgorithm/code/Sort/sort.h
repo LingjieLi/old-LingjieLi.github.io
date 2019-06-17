@@ -27,19 +27,25 @@ public:
     template <typename T>
     static bool shell_sort(T* data, int length);
     template <typename T>
-    static bool head_sort1(T* data, int length);
+    static bool heap_sort1(T* data, int length);
     template <typename T>
-    static bool head_sort2(T* data, int length);
+    static bool heap_sort2(T* data, int length);
     template <typename T>
     static bool quick_sort(T* data, int length);
     template <typename T>
     static bool merge_recursive_sort(T* data, int length);
     template <typename T>
-    bool merge_norecursive_sort(T* data, int length);
+    static bool merge_norecursive_sort(T* data, int length);
+    template <typename T>
+    static bool bucket_sort(T* data, int length);
+    template <typename T>
+    static bool lsdradix_sort(int data, int length);
+    static bool msdradix_sort(int data, int length);
 
 private:
     template <typename T>
-    void Merge(T* data, T* tmp_data, int left, int right, int right_end);
+    void
+    Merge(T* data, T* tmp_data, int left, int right, int right_end);
     template <typename T>
     void Merge1(T* data, T* tmp_data, int left, int right, int right_end);
     template <typename T>
@@ -180,7 +186,7 @@ bool Sort::shell_sort(T* data, int length)
 *
 **/
 template <typename T>
-bool Sort::head_sort1(T* data, int length)
+bool Sort::heap_sort1(T* data, int length)
 {
     ///buildMinHeap(data)构建一个最小堆 ///(1)
     ///T *temp=new T[length];
@@ -192,7 +198,7 @@ bool Sort::head_sort1(T* data, int length)
     ///}
 }
 /**
-* @name     head_sort2(堆排序)，原址排序
+* @name     heap_sort2(堆排序)，原址排序
 * @brief    (1)构建最小堆
 *           (2)将最大元素放在最后
 *           (3)维度最大堆，向下过滤函数
@@ -205,7 +211,7 @@ bool Sort::head_sort1(T* data, int length)
 *
 **/
 template <typename T>
-bool Sort::head_sort2(T* data, int length)
+bool Sort::heap_sort2(T* data, int length)
 {
     // buildMaxHeap(data); ///(1)
     // for (uint i = N - 1; i > 0; i--) {
