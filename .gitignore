@@ -1,5 +1,7 @@
 *.out
 *.o
+*.i
+*.e
 *.exe
 *.orig   
 _site/
