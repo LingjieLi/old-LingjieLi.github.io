@@ -1,7 +1,7 @@
 /*
  * @Description: 
  * @LastEditors: lydia
- * @LastEditTime: 2019-08-10 15:57:04
+ * @LastEditTime: 2019-08-11 20:06:52
  * @Author: lydia
  * @Date: 2019-08-10 15:30:17
  */
@@ -90,8 +90,9 @@ int main()
 
     stack->push(1);
     stack->push(2);
-    cout << stack->top() << "\n"; // returns 2
-    cout << stack->pop() << "\n"; // returns 2
-    cout << stack->empty() << "\n"; // returns false
-    return 1;
+    cout << stack->top() << "\n";
+    cout << stack->pop() << "\n";
+    cout << stack->pop() << "\n";
+    cout << stack->empty() << "\n";
+    return 0;
 }
