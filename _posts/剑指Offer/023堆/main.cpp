@@ -11,6 +11,7 @@
 
 #include <vector>
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -26,9 +27,11 @@ public:
     {
         size = data.size();
         elements.resize(capacity + 1);
+
+        cout << size << "\n";
         if (size > capacity) {
             capacity *= 2;
-            elements.resize(capacity * 2);
+            elements.resize(capacity + 1);
         }
         for (int i = 1; i <= size; i++) {
             elements[i] = data[i - 1];
@@ -36,9 +39,14 @@ public:
 
         //调整最小堆的结构 O(n)时间复杂度
         //从倒数第二层开始操作
-        for (int i = size / 2; i >= 1; i--) {
+        for (int i = parent(size); i >= 1; i--) {
             max_heapfy(i);
         }
+
+        // for (int i = 1; i <= size; i++) {
+        //     cout << elements[i] << "\t";
+        // }
+        // cout << "\n";
     };
 
     //上滤法
@@ -53,23 +61,55 @@ public:
             elements = tmp;
         }
 
+        elements[size + 1] = val;
+
         size++;
+        //上滤
+        for (int i = parent(size); i >= 1; i--) {
+            // if (max_heapfy(i)) {
+            //     break;
+            // }
+            max_heapfy(i);
+        }
+
+        return true;
     };
 
-    bool deleteMin(){};
+    bool deleteMin()
+    {
+        if (size == 0)
+            return false;
+        elements[1] = elements[size];
+        size--;
+
+        //下滤操作
+        for (int i = 1; i <= size / 2; i++) {
+            // if (max_heapfy(i)) {
+            //     break;
+            // }
+            max_heapfy(i);
+        }
+        return true;
+    };
+
+    vector<int> getElements(int& _size) const
+    {
+        _size = size;
+        return elements;
+    };
 
 private:
     //维护最大堆的性质
-    void max_heapfy(int idx)
+    bool max_heapfy(int idx)
     {
-        int minestidx;
+        int minestidx = idx;
         int lidx = left(idx);
         int ridx = right(idx);
 
-        if (elements[minestidx] > elements[lidx]) {
+        if (lidx <= size && elements[minestidx] > elements[lidx]) {
             minestidx = lidx;
         }
-        if (elements[minestidx] > elements[ridx]) {
+        if (ridx <= size && elements[minestidx] > elements[ridx]) {
             minestidx = ridx;
         }
 
@@ -78,7 +118,10 @@ private:
             int tmp = elements[idx];
             elements[idx] = elements[minestidx];
             elements[minestidx] = tmp;
+
+            return false;
         }
+        return true;
     };
     int left(int idx)
     {
@@ -88,6 +131,10 @@ private:
     {
         return 2 * idx + 1;
     };
+    int parent(int idx)
+    {
+        return floor(idx / 2.0);
+    }
 
 private:
     int size = 0; //实际元素数量
@@ -95,7 +142,35 @@ private:
 
     vector<int> elements; //存储堆元素
 };
-
+ostream& operator<<(ostream& out, const MinHeap& heap)
+{
+    int size = 0;
+    vector<int> data = heap.getElements(size);
+    cout << size << "\n";
+    for (int i = 1; i <= size; i++) {
+        out << data[i] << "\t";
+    }
+    return out;
+};
 int main()
 {
+    vector<int> data{ 1, 3, 5, 9, 2, 4, 6, 8 };
+    MinHeap heap(data);
+    cout << "init:\n"
+         << heap << "\n";
+    heap.insert(0);
+    cout << "insert 0:\n"
+         << heap << "\n";
+    heap.insert(10);
+    cout << "insert 10:\n"
+         << heap << "\n";
+    heap.insert(7);
+    cout << "insert 7:\n"
+         << heap << "\n";
+    heap.deleteMin();
+    cout << "deletemin:\n"
+         << heap << "\n";
+    heap.deleteMin();
+    cout << "deletemin:\n"
+         << heap << "\n";
 }
