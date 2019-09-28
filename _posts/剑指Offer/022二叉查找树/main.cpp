@@ -7,51 +7,64 @@
 * @date    2019-09-18 14:55:17
 *
 **/
+//Binary Search Tree
 
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-class A {
-public:
-    A(){};
-    A(int _d)
-        : d(_d){};
-    A(A& a)
-        : d(a.d){};
-    const A& operator=(const A& rhs) //常引用不能作为左值
-    {
-        if (this != &rhs) {
-            d = rhs.d;
-        }
-        return *this;
-    };
-    int& getData()
-    {
-        return d;
-    };
-    void print()
-    {
-        cout << d << "\n";
-    }
+struct BSTNode {
+    int key;
+    BSTNode* left = nullptr;
+    BSTNode* right = nullptr;
+    BSTNode* parent = nullptr;
+
+    BSTNode(int _key)
+        : key(_key){};
+};
+
+class BSTree {
+private:
+    BSTNode* pRoot; //根节点
 
 public:
-    int d = 2;
+    BSTree(){};
+    ~BSTree(){};
+
+    //遍历
+    vector<int> preOrder();
+    vector<int> inOrder();
+    vector<int> postOrder();
+
+    //查找
+    BSTNode* search(int key);
+    BSTNode* iterativeSearch(int key);
+
+    //查找特殊节点
+    int minimum();
+    //查找最大节点
+    int maxmum();
+
+    //后继节点，比它大的最小节点
+    BSTNode* successor(BSTNode* x);
+
+    //前驱节点，比它小的最大节点
+    BSTNode* presuccessor(BSTNode* x);
+
+    void insert(int key);
+    void remove(int key);
+
+    //销毁二叉树
+    void destory();
+
+    //打印二叉树
+    void print();
 };
+
+void BSTree::preOrder() {}
 
 int main()
 {
-    A a1(3);
-    A a2 = a1; //拷贝构造
-    a2.print();
-    A a3;
-    a3 = a2; //赋值构造
-    a3.print();
-    a2.print();
-    a3.d = 5;
-    a2.print();
-    a3.print();
-    a3.getData() = 6;
-    a3.print();
     return 0;
-}
+};
